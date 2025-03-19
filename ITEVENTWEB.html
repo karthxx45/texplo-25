@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Under Development</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and background settings */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #ff7e5f, #feb47b);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        /* Container for the content */
+        .content {
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* The large "401" number */
+        .number {
+            font-size: 150px;
+            font-weight: bold;
+            letter-spacing: 10px;
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+            margin-bottom: 20px;
+        }
+
+        /* The "Under Development" text */
+        .message {
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 500;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Animation for fading in the message */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Button for refreshing the page */
+        .refresh-btn {
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .refresh-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <div class="number">401</div>
+        <div class="message">Under Development</div>
+        <button class="refresh-btn" onclick="reloadPage()">Refresh</button>
+    </div>
+
+    <script>
+        // JavaScript to refresh the page
+        function reloadPage() {
+            location.reload();
+        }
+    </script>
+
+</body>
+</html>
